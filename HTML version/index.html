@@ -30,7 +30,7 @@
 
 <!-- This actually does call the correct URL, it just doesn't pass the form entry into it. At all. -->
 <!-- Submit should go do the query and redirect the user to bookinfo.html, which in theory will be able to parse the return from the API into something useful. -->
-<form id="ISBN_search" method= "post" action="https://www.googleapis.com/books/v1/volumes?q=isbn:">
+<form id="ISBN_search" method= "get" action="https://www.googleapis.com/books/v1/volumes?q=isbn:">
   <label for="isbn">ISBN:</label>
   <input type="text" name="isbn">
   <input type="submit" value="Search" class="submitbutton">
