@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Trigger Warning Database: Book Rating Page</title>
+<link rel="stylesheet" type="text/css" href="triggerdbstyle.css"
+<meta name="keywords" content="triggers, warning, books">
+<meta name="description" content="The page where trigger warnings for published works are gathered from users.">
+</head>
+
+<body>
+
+<div id="container" style="width:100%">
+<!-- Pretty header someday!-->
+
+<div id="header">
+<h1>Ratings Page</h1>
+</div>
+
+<div id="menu" style="width:20%;float:left;">
+<p><b>Useful Links</b></p>
+<ul class="menu">
+<li><a href="definitions.html">Definitions</a></li>
+</li>
+</div>
+
+<div id="content" style="width:80%;float:right;">
+
+<!-- Book data goes here -->
+
+<!-- Cover thumbnail - should float left -->
+<!-- Title -->
+<!-- Author -->
+<!-- Pub date -->
+
+<p>Enter this book's trigger types here:</p>
+<!-- Ratings -->
+<form>
+<input type="checkbox" name="general" value="ga"> General Audiences<br />
+<input type="checkbox" name="teen" value="ta"> Teen and Up Audiences<br />
+<input type="checkbox" name="mature" value="ma"> Mature<br />
+<input type="checkbox" name="explicit" value="xxx"> Explicit<br />
+<input type="checkbox" name="graphic" value="graphic"> Graphic Violence<br />
+<input type="checkbox" name="violence" value="violence"> Violence<br />
+<input type="checkbox" name="major" value="mcd"> Major Character Death<br />
+<input type="checkbox" name="death" value="cd"> Character Death<br />
+<input type="checkbox" name="rape" value="rape"> Rape<br />
+<input type="checkbox" name="abuse" value="abuse"> Abuse<br />
+<input type="checkbox" name="child" value="child"> Abuse - child<br />
+
+<input type="submit" value="Submit">
+</form>
+
+<!-- Thing to take data just acquired and stuff it into the database. -->
+<!-- Don't make it too hard to separate out anons from known users or V2 will really suck. -->
+
+<p>For more information about triggers, please see the <a href="definitions.html">definitions page</a>.</p>
+
+</div>
+
+<div id="footer" style="clear:both;text-align:center;font-size:small;">
+<p>Created by aiglet and cadhla.</p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+.center {text-align:center;}
+.normal {font-style:normal;}
+.italic {font-style:italic;}
+.cover {float: left;}
+  
+
+h1 {
+  text-align:center;
+  color:purple;
+  font-family:"Times New Roman", Times, serif;
+  font-size:24px;
+}
+
+table {
+  border-collapse:collapse;
+  width:100%;
+}
+
+table, th, td {border:1px solid black;}
+
+td {text-align:left;}
+
+dt {
+ color:red;
+ font-style:italic;
+}
+
+ul.menu
+{
+list-style-type:none;
+margin:0;
+padding:0;
+}
