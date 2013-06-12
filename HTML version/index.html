@@ -28,17 +28,16 @@
 <div id="content" style="width:80%;float:right;">
 <!-- Search is the only thing you need. -->
 
-<!-- Write a form to take in the ISBN and stash it in a variable, I think. -->
-<!-- Submit should go do the query and take you to bookinfo.html -->
-<form id="ISBN_search" method= "post" action="https://www.googleapis.com/books/v1/volumes">
-  <label for="ISBN">ISBN:</label>
-  <input type="hidden" name="q">
-  <input type="text" name="isbn:">
+<!-- This actually does call the correct URL, it just doesn't pass the form entry into it. At all. -->
+<!-- Submit should go do the query and redirect the user to bookinfo.html, which in theory will be able to parse the return from the API into something useful. -->
+<form id="ISBN_search" method= "post" action="https://www.googleapis.com/books/v1/volumes?q=isbn:">
+  <label for="isbn">ISBN:</label>
+  <input type="text" name="isbn">
   <input type="submit" value="Search" class="submitbutton">
 </form>
 
-<!-- Write some PHP to do something with the variable. -->
-<!-- This doesn't work. -->
+<!-- Write some PHP to do something with the variable instead, maybe?. -->
+<!-- This doesn't work either. -->
 
  
  <?php
@@ -64,6 +63,7 @@ If I get the query working well, these might also be worth supporting.
 -->
 </div>
 
+<!-- Since this is on GitHub, please add yourself to this list here and on the template.html if you make changes so you can have credit. -->
 <div id="footer" style="clear:both;text-align:center;font-size:small;">
 <p>Created by aiglet and cadhla.</p>
 </div>
