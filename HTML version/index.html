@@ -28,27 +28,13 @@
 <div id="content" style="width:80%;float:right;">
 <!-- Search is the only thing you need. -->
 
-<!-- This actually does call the correct URL, it just doesn't pass the form entry into it. At all. -->
 <!-- Submit should go do the query and redirect the user to bookinfo.html, which in theory will be able to parse the return from the API into something useful. -->
-<form id="ISBN_search" method= "get" action="https://www.googleapis.com/books/v1/volumes?q=isbn:">
-  <label for="isbn">ISBN:</label>
-  <input type="text" name="isbn">
+<form id="ISBN_search" method= "get" action="https://www.googleapis.com/books/v1/volumes">
+	<input type="hidden" name="redirect" value="bookinfo.html">
+  <label for="q">ISBN:</label>
+  <input type="text" name="q">
   <input type="submit" value="Search" class="submitbutton">
 </form>
-
-<!-- Write some PHP to do something with the variable instead, maybe?. -->
-<!-- This doesn't work either. -->
-
- 
- <?php
-
-function processISBNQuery() {
-  $isbn = $_GET[isbn]
-  $url = "https://www.googleapis.com/books/v1/volumes?q=isbn:" . $isbn
-  header("Book Data: $url");
-  exit;
-} 
-?>
 
 <!--
 
